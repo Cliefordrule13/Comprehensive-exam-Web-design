@@ -4,46 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT Professional Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        nav {
-            background-color: #333;
-            color: white;
-            padding: 1rem;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 0 1rem;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-        section {
-            padding: 2rem;
-            text-align: center;
-        }
-        .hero {
-            background-color: #f4f4f4;
-            padding: 4rem 2rem;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -52,5 +19,47 @@
         <h1>Welcome to My IT Professional Portfolio</h1>
         <p>I am an IT professional with expertise in software development, web design, and more.</p>
     </section>
+    <section id="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>Programming Languages: JavaScript, Python, Java</li>
+            <li>Web Technologies: HTML, CSS, React, Node.js</li>
+            <li>Databases: MySQL, MongoDB</li>
+            <li>Tools: Git, Docker, AWS</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Web Application Development</h3>
+            <p>Developed a full-stack web application using React and Node.js for e-commerce.</p>
+        </div>
+        <div class="project">
+            <h3>Mobile App</h3>
+            <p>Created a cross-platform mobile app using Flutter for task management.</p>
+        </div>
+        <div class="project">
+            <h3>Database Optimization</h3>
+            <p>Optimized database queries in SQL Server, improving performance by 40%.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: your.email@example.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
 </body>
 </html>
